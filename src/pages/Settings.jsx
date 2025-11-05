@@ -39,12 +39,12 @@ export default function Settings() {
   }, []);
 
   return (
-    <div className="flex min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
       <Sidebar />
-      <div className="flex-1 flex flex-col">
+      <div className="lg:ml-64 flex flex-col min-h-screen">
         <Navbar />
 
-        <main className="flex-1 p-6 lg:p-8">
+        <main className="flex-1 p-6 lg:p-8 pt-20">
           {/* Page Header */}
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-green-800 mb-2">Settings</h2>
