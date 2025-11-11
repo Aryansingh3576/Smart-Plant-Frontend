@@ -80,7 +80,7 @@ export default function Sensors() {
                       </div>
                     </div>
                     <p className="text-sm font-semibold text-gray-600 mb-2 uppercase tracking-wide">Temperature</p>
-                    <p className="text-4xl font-bold text-gray-800 mb-1">{sensor.temp} °C</p>
+                    <p className="text-4xl font-bold text-gray-800 mb-1">-- °C</p>
                     <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                       <p className="text-xs text-gray-500">Optimal: 18-24°C</p>
                       <div className={`w-2 h-2 rounded-full ${sensor.temp >= 18 && sensor.temp <= 24 ? 'bg-green-500' : 'bg-yellow-500'}`}></div>
@@ -103,7 +103,7 @@ export default function Sensors() {
                       </div>
                     </div>
                     <p className="text-sm font-semibold text-gray-600 mb-2 uppercase tracking-wide">Humidity</p>
-                    <p className="text-4xl font-bold text-gray-800 mb-1">{sensor.humidity} %</p>
+                    <p className="text-4xl font-bold text-gray-800 mb-1">-- %</p>
                     <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                       <p className="text-xs text-gray-500">Optimal: 40-60%</p>
                       <div className={`w-2 h-2 rounded-full ${sensor.humidity >= 40 && sensor.humidity <= 60 ? 'bg-green-500' : 'bg-yellow-500'}`}></div>
@@ -126,7 +126,7 @@ export default function Sensors() {
                       </div>
                     </div>
                     <p className="text-sm font-semibold text-gray-600 mb-2 uppercase tracking-wide">Soil Moisture</p>
-                    <p className="text-4xl font-bold text-gray-800 mb-1">{sensor.moisture}</p>
+                    <p className="text-4xl font-bold text-gray-800 mb-1">--</p>
                     <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
                       <p className="text-xs text-gray-500">Keep soil moist</p>
                       <div className="w-2 h-2 rounded-full bg-green-500"></div>
